@@ -3,22 +3,46 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>New Project Template</title>
+	<title>Tom's To-Do List</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Stuff -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Ubuntu" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-	<main>
-		<h1>New Project Template</h1>
-		<p>Hello, world!</p>
+	<main role="main">
+		<div class="container">
 
-		<button>Press me</button>
+				<div class="toDo toDoInput">
+					<h1 class="mx-auto">Tom's To-Do List</h1>
+					<form action="" id="addForm">
+							<input name="itemDescription" type="text" class="form-control" placeholder="Enter a new to-do item">
+					</form>
+				</div>
+
+				<div class="toDo toDoListContainer">
+					<ul class="toDoList" id="list">
+					</ul>
+				</div>
+		</div>
 	</main>
 
-  <!-- Necessary Scripts... Keep these at the bottom of your <body> :) -->
+	<div id="templates">
+		<li class="toDoItem" data-id="1">
+			<span class="complete">&#10004;</span>
+			<span class="description"></span>
+			<span class="delete">&#10006;</span>
+		</li>
+	</div>
+
+	<!-- Necessary Scripts... Keep these at the bottom of your <body> :) -->
   <script src="//localhost:35729/livereload.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 

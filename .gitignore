@@ -60,3 +60,5 @@ typings/
 # Ignore sass cache
 .sass-cache
 .sass-cache/*
+
+bootstrap.css
